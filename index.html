@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavin Domadiya</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="slick-slider/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick-slider/slick.css"/>
+    <script type="text/javascript" src="slick-slider/slick.min.js"></script>
+</head>
+<body>
+    
+    <!-- HEADER START -->
+    <header class="background-color">
+        <div class="page-width">
+            <div class="header">
+                <div class="logo">
+                    <a href="/"><img src="images/Group 1128.png" alt="Bhavin Logo"></a>
+                </div>
+                <div class="nav-menu">
+                    <button class="hamburger">
+                        <img class="open" src="images/Vector.svg" alt="Open Menu">
+                    </button>
+                    <div class="background-overlay"></div>
+                    <ul class="nav">
+                        <img class="close" src="images/Group 1.svg" alt="Close Menu">
+                        <li><a href="#" class="sofia-22-400 white-color">Services</a></li>
+                        <li><a href="#" class="sofia-22-400 white-color">Work</a></li>
+                        <li><a href="#" class="sofia-22-400 white-color">Testimonials</a></li>
+                        <li><a href="#" class="sofia-22-400 white-color">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <a href="tel:+91 73536 36206" class="sofia-24 weight-600 white-color">
+                        <img src="images/Whatsapp-2.png" alt="WhatsApp Icon"><span>+91 73536 36206</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('.nav');
+            const overlay = document.querySelector('.background-overlay');
+            const closeBtn = document.querySelector('.nav .close');
+            const body = document.body;
+
+            function toggleMenu() {
+                if (window.innerWidth <= 767) {
+                    nav.classList.toggle('active');
+                    overlay.classList.toggle('active');
+                    body.classList.toggle('menu-open');
+                }
+            }
+            hamburger.addEventListener('click', toggleMenu);
+            closeBtn.addEventListener('click', toggleMenu);
+            overlay.addEventListener('click', toggleMenu);
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 767) {
+                    nav.classList.remove('active');
+                    overlay.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            });
+        });
+    </script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            const threshold = window.innerHeight * 0.2;
+
+            if (window.scrollY > threshold) {
+                header.classList.add('fixed');
+            } else {
+                header.classList.remove('fixed');
+            }
+        });
+    </script>
+    <!-- HEADER END -->
+
+    <!-- HERO BANNER START -->
+    <section class="hero-banner background-color">
+        <div class="page-width">
+            <div class="baner-content">
+                <h1 class="white-color sofia-60-700">Full Stack <span>Shopify <img src="images/Group 4.svg" alt="Shopify Icon"></span> Expert As Your Tech Partner</h1>
+                <p class="sofia-30-300 gray-color">Let’s design and develop a Shopify store that truly represents your brand.</p>
+                <p class="sofia-30-300 gray-color">With expertise in Shopify store setup and development services, I provide full-stack Shopify development, including UI/UX design and theme customization. Discover the best Shopify developer for custom Shopify themes and affordable e-commerce solutions. Enhance your store’s user experience with expert Shopify customization.
+</p>
+                <div class="banner-button">
+                    <a href="#" class="secondary-button">Schedule a Call</a>
+                    <a href="#" class="primary-button">View Work</a>
+                </div>
+                <div class="banner-bottom">
+                    <div class="review-content">
+                        <div class="review">
+                            <div class="review-number">
+                                <h4 class="white-color sofia-34-900">50+</h4>
+                                <img src="images/Star.svg" alt="Star Icon">
+                            </div>
+                            <div class="mobile-review-info">
+                                <div class="info">
+                                    <h4 class="white-color sofia-34-900">87</h4>
+                                    <img src="images/Star.svg" alt="Star Icon">
+                                </div>
+                                <div class="icon">
+                                    <img src="images/Group 1077 (1).svg" alt="Icon 1">  
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h5>Krushna Ghevariya, Jay Virani and 21 others</h5>
+                                <h6>are already growing their businesses since my expertise.</h6>
+                            </div>
+                        </div>
+                        <div class="review-icon">
+                            <img src="images/Group 1077.svg" alt="Icon 1">
+                        </div>
+                    </div>
+                    <div class="features-list">
+                        <div class="features">
+                            <img src="images/Shopify-2.png" alt="Icon 2">
+                            <h4 class="white-color sofia-24 weight-500">Shopify Expert</h4>
+                        </div>
+                        <div class="features">
+                            <img src="images/Frame (1).svg" alt="Icon 3">
+                            <h4 class="white-color sofia-24 weight-500">E-commerce Specialist</h4>
+                        </div>
+                        <div class="features">
+                            <img src="images/Frame.svg" alt="Icon 4">
+                            <h4 class="white-color sofia-24 weight-500">Everything D2C</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HERO BANNER END -->
+
+    <!-- LOGO LIST SECTION START -->
+    <section class="logo-list-section">
+        <div class="top-logo-list">
+            <div class="logo-lable">
+                <img class="desktop" src="images/Shark.png" alt="Shark Tank Icon">
+                <img class="mobile" src="images/Shark-mobile.png" alt="Shark Tank Icon">
+            </div>
+            <div class="logos">
+                <img src="images/Ekatra.svg" alt="Ekatra">
+                <img src="images/Quirksmith.svg" alt="Quirksmith">
+                <img src="images/isak.svg" alt="Isak">
+                <img src="images/Fit.svg" alt="Fit Feast">
+                <img src="images/Exclusive.svg" alt="Exclusive">
+                <img src="images/Zoe.svg" alt="Zoe">
+            </div>
+        </div>
+        <div class="bottom-logo-list">
+            <img src="images/Habbits.svg" alt="Habbits">
+            <img src="images/Trutt.svg" alt="Trutt">
+            <img src="images/Cookd.svg" alt="Cookd">
+            <img src="images/Classic.svg" alt="Classy lether">
+            <img src="images/Sports.svg" alt="Sports">
+            <img src="images/Truely.svg" alt="Truely">
+            <img src="images/Cover.svg" alt="Cover It UP">
+            <img src="images/Dinadi.svg" alt="Dinadi">
+            <img src="images/Mama.svg" alt="Mama Life">
+            <img src="images/Mahetry.svg" alt="Mahe Tri">
+        </div>
+    </section>
+    <!-- LOGO LIST SECTION END -->
+
+    <!-- OUR WORK SECTION START -->
+    <section class="our-work-section">
+        <div class="page-width">
+            <div class="section-title">
+                <h2 class="sofia-60-700 black-color">Our Work</h2>
+            </div>
+            <div class="work-image-list">
+                <div class="list">
+                    <a href="https://quirksmith.com/">
+                        <img src="images/Quirksmith-image.png" alt="Quirksmith Image">
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="https://www.habbits.in/products/natural-teeth-whitening-powder-charcoal-ylang-ylang-mint">
+                        <img src="images/Habbits-image.png" alt="Habbits Image">
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="https://ekatrahandmade.com/">
+                        <img src="images/Ekatra-image.png" alt="Ekatra Image">
+                    </a>
+                </div>
+            </div>
+            <div class="section-button">
+                <a href="#" class="primary-button">View More Work</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function(){
+            function initializeSlick() {
+                $('.our-work-section .work-image-list').slick({
+                    slidesToShow: 1.14,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: false,
+                    infinite: false,
+                });
+            }
+
+            if ($(window).width() <= 767) {
+                initializeSlick();
+            }
+
+            $(window).resize(function() {
+                if ($(window).width() <= 767 && !$('.our-work-section .work-image-list').hasClass('slick-initialized')) {
+                    initializeSlick();
+                } else if ($(window).width() > 767 && $('.our-work-section .work-image-list').hasClass('slick-initialized')) {
+                    $('.our-work-section .work-image-list').slick('unslick');
+                }
+            });
+        });
+    </script>
+    <!-- OUR WORK SECTION END -->
+
+    <!-- TABBING SECTION START -->
+    <section class="tabbing-section">
+        <div class="page-width">
+            <div class="section-title">
+                <h2 class="black-color sofia-60-700">Outstanding Shopify Development</h2>
+                <p class="slate-blue sofia-22-400">Partner with me to access an array of expert Shopify development services, designed to meet your needs at a cost that fits your budget.</p>
+            </div>
+            <div class="tab-container">
+                <div class="tabbed-interface">
+                    <div class="tab-buttons">
+                        <button class="sofia-20 weight-400 white-color tab-button active" onclick="openTab('tab1')">Store Setup & Build</button>
+                        <button class="sofia-20 weight-400 white-color tab-button" onclick="openTab('tab2')">Design & UX</button>
+                        <button class="sofia-20 weight-400 white-color tab-button" onclick="openTab('tab3')">Performance & Optimization</button>
+                        <button class="sofia-20 weight-400 white-color tab-button" onclick="openTab('tab4')">Integrations & Tech</button>
+                        <button class="sofia-20 weight-400 white-color tab-button" onclick="openTab('tab5')">Ongoing Services & Support</button>
+                    </div>
+                    <div class="tab-content">
+                        <div id="tab1" class="tab-pane active">
+                            <h3 class="bokara-grey">Store Setup & Build</h3>
+                            <p class="bokara-grey sofia-20 weight-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <ul>
+                                <li class="bokara-grey sofia-20 weight-700">Store Setup</li>
+                                <li class="bokara-grey sofia-20 weight-700">Theme Building and Customization</li>
+                                <li class="bokara-grey sofia-20 weight-700">Custom Features Development</li>
+                                <li class="bokara-grey sofia-20 weight-700">Store Setup</li>
+                            </ul>
+                        </div>
+                        <div id="tab2" class="tab-pane" style="display: none;">
+                            <h3 class="bokara-grey">Design & UX</h3>
+                            <p class="bokara-grey sofia-20 weight-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <ul>
+                                <li class="bokara-grey sofia-20 weight-700">Store Setup</li>
+                                <li class="bokara-grey sofia-20 weight-700">Custom Features Development</li>
+                                <li class="bokara-grey sofia-20 weight-700">Theme Building and Customization</li>
+                            </ul>
+                        </div>
+                        <div id="tab3" class="tab-pane" style="display: none;">
+                            <h3 class="bokara-grey">Performance & Optimization</h3>
+                            <p class="bokara-grey sofia-20 weight-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <ul>
+                                <li class="bokara-grey sofia-20 weight-700">Store Setup</li>
+                                <li class="bokara-grey sofia-20 weight-700">Custom Features Development</li>
+                                <li class="bokara-grey sofia-20 weight-700">Theme Building and Customization</li>
+                                <li class="bokara-grey sofia-20 weight-700">Store Setup</li>
+                            </ul>
+                        </div>
+                        <div id="tab4" class="tab-pane" style="display: none;">
+                            <h3 class="bokara-grey">Integrations & Tech</h3>
+                            <p class="bokara-grey sofia-20 weight-400">when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <ul>
+                                <li class="bokara-grey sofia-20 weight-700">Store Setup</li>
+                                <li class="bokara-grey sofia-20 weight-700">Custom Features Development</li>
+                                <li class="bokara-grey sofia-20 weight-700">Theme Building and Customization</li>
+                                <li class="bokara-grey sofia-20 weight-700">Store Setup</li>
+                            </ul>
+                        </div>
+                        <div id="tab5" class="tab-pane" style="display: none;">
+                            <h3 class="bokara-grey">Ongoing Services & Support</h3>
+                            <p class="bokara-grey sofia-20 weight-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <ul>
+                                <li class="bokara-grey sofia-20 weight-700">Store Setup</li>
+                                <li class="bokara-grey sofia-20 weight-700">Custom Features Development</li>
+                                <li class="bokara-grey sofia-20 weight-700">Theme Building and Customization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-interface">
+                    <button class="sofia-20 weight-400 white-color accordion-button active" onclick="toggleAccordion('acc1')">Store Setup & Build</button>
+                    <div id="acc1" class="accordion-content active">
+                        <p class="bokara-grey sofia-20 weight-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <ul>
+                            <li class="bokara-grey sofia-20 weight-700">Store Setup</li>
+                            <li class="bokara-grey sofia-20 weight-700">Custom Features Development</li>
+                            <li class="bokara-grey sofia-20 weight-700">Theme Building and Customization</li>
+                        </ul>
+                    </div>
+                    <button class="sofia-20 weight-400 white-color accordion-button" onclick="toggleAccordion('acc2')">Design & UX</button>
+                    <div id="acc2" class="accordion-content">
+                        <p class="bokara-grey sofia-20 weight-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <ul>
+                            <li class="bokara-grey sofia-20 weight-700">Store Setup</li>
+                            <li class="bokara-grey sofia-20 weight-700">Custom Features Development</li>
+                            <li class="bokara-grey sofia-20 weight-700">Theme Building and Customization</li>
+                            <li class="bokara-grey sofia-20 weight-700">Store Setup</li>
+                        </ul>
+                    </div>
+                    <button class="sofia-20 weight-400 white-color accordion-button" onclick="toggleAccordion('acc3')">Performance & Optimization</button>
+                    <div id="acc3" class="accordion-content">
+                        <p class="bokara-grey sofia-20 weight-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <ul>
+                            <li class="bokara-grey sofia-20 weight-700">Store Setup</li>
+                            <li class="bokara-grey sofia-20 weight-700">Custom Features Development</li>
+                            <li class="bokara-grey sofia-20 weight-700">Theme Building and Customization</li>
+                            <li class="bokara-grey sofia-20 weight-700">Store Setup</li>
+                        </ul>
+                    </div>
+                    <button class="sofia-20 weight-400 white-color accordion-button" onclick="toggleAccordion('acc4')">Integrations & Tech</button>
+                    <div id="acc4" class="accordion-content">
+                        <p class="bokara-grey sofia-20 weight-400">Lorem Ipsum is simply dummy text of the when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <ul>
+                            <li class="bokara-grey sofia-20 weight-700">Store Setup</li>
+                            <li class="bokara-grey sofia-20 weight-700">Custom Features Development</li>
+                            <li class="bokara-grey sofia-20 weight-700">Theme Building and Customization</li>
+                        </ul>
+                    </div>
+                    <button class="sofia-20 weight-400 white-color accordion-button" onclick="toggleAccordion('acc5')">Ongoing Services & Support</button>
+                    <div id="acc5" class="accordion-content">
+                        <p class="bokara-grey sofia-20 weight-400">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <ul>
+                            <li class="bokara-grey sofia-20 weight-700">Store Setup</li>
+                            <li class="bokara-grey sofia-20 weight-700">Store Setup</li>
+                            <li class="bokara-grey sofia-20 weight-700">Custom Features Development</li>
+                            <li class="bokara-grey sofia-20 weight-700">Theme Building and Customization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function openTab(tabName) {
+            var i, tabpanes, tabbuttons;
+            tabpanes = document.getElementsByClassName("tab-pane");
+            tabbuttons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabpanes.length; i++) {
+                tabpanes[i].style.display = "none";
+            }
+            for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].classList.remove("active");
+            }
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.classList.add("active");
+        }
+        function toggleAccordion(accName) {
+            var i, accContents, accButtons;
+            accContents = document.getElementsByClassName("accordion-content");
+            accButtons = document.getElementsByClassName("accordion-button");
+            var content = document.getElementById(accName);
+            var isActive = content.classList.contains("active");
+            for (i = 0; i < accContents.length; i++) {
+                accContents[i].style.display = "none";
+                accContents[i].classList.remove("active");
+            }
+            for (i = 0; i < accButtons.length; i++) {
+                accButtons[i].classList.remove("active");
+            }
+            if (!isActive) {
+                content.style.display = "block";
+                content.classList.add("active");
+                event.currentTarget.classList.add("active");
+            }
+        }
+    </script>
+    <!-- TABBING SECTION END -->
+
+    <!-- VIDEO SECTION START -->
+    <section class="video-section">
+        <div class="page-width">
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <div class="video-contant">
+                        <div class="video-thumb">
+                            <img src="images/image1.png" alt="Video Thumbnail 1">
+                        </div>
+                        <div class="play-button"></div>
+                        <div class="video">
+                            <video style="visibility: hidden;">
+                                <source src="images/mov_bbb.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="client-profile">
+                            <img class="client-profile-image" src="images/icon1.png" alt="Profile 1">
+                        </div>
+                        <div class="client-name">
+                            <p class="sofia-14-600 black-color">Website Username</p>
+                            <a href="https://www.biddabee.com">www.biddlebee.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrapper">
+                    <div class="video-contant">
+                        <div class="video-thumb">
+                            <img src="images/image2.png" alt="Video Thumbnail 2">
+                        </div>
+                        <div class="play-button"></div>
+                        <div class="video">
+                            <video style="visibility: hidden;">
+                                <source src="images/video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="client-profile">
+                            <img class="client-profile-image" src="images/icon2.png" alt="Profile 2">
+                        </div>
+                        <div class="client-name">
+                            <p class="sofia-14-600 black-color">Website Username</p>
+                            <a href="https://www.biddabee.com">www.biddlebee.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrapper">
+                    <div class="video-contant">
+                        <div class="video-thumb">
+                            <img src="images/image3.png" alt="Video Thumbnail 3">
+                        </div>
+                        <div class="play-button"></div>
+                        <div class="video">
+                            <video style="visibility: hidden;">
+                                <source src="images/mov_bbb.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="client-profile">
+                            <img class="client-profile-image" src="images/icon3.png" alt="Profile 3">
+                        </div>
+                        <div class="client-name">
+                            <p class="sofia-14-600 black-color">Website Username</p>
+                            <a href="https://www.biddabee.com">www.biddlebee.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrapper">
+                    <div class="video-contant">
+                        <div class="video-thumb">
+                            <img src="images/image4.png" alt="Video Thumbnail 4">
+                        </div>
+                        <div class="play-button"></div>
+                        <div class="video">
+                            <video style="visibility: hidden;">
+                                <source src="images/mov_bbb.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="client-profile">
+                            <img class="client-profile-image" src="images/icon4.png" alt="Profile 4">
+                        </div>
+                        <div class="client-name">
+                            <p class="sofia-14-600 black-color">Website Username</p>
+                            <a href="https://www.biddabee.com">www.biddlebee.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrapper">
+                    <div class="video-contant">
+                        <div class="video-thumb">
+                            <img src="images/image5.png" alt="Video Thumbnail 5">
+                        </div>
+                        <div class="play-button"></div>
+                        <div class="video">
+                            <video style="visibility: hidden;">
+                                <source src="images/mov_bbb.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="client-profile">
+                            <img class="client-profile-image" src="images/icon5.png" alt="Profile 5">
+                        </div>
+                        <div class="client-name">
+                            <p class="sofia-14-600 black-color">Website Username</p>
+                            <a href="https://www.biddabee.com">www.biddlebee.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrapper">
+                    <div class="video-contant">
+                        <div class="video-thumb">
+                            <img src="images/image6.png" alt="Video Thumbnail 6">
+                        </div>
+                        <div class="play-button"></div>
+                        <div class="video">
+                            <video style="visibility: hidden;">
+                                <source src="images/mov_bbb.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="client-profile">
+                            <img class="client-profile-image" src="images/icon6.png" alt="Profile 6">
+                        </div>
+                        <div class="client-name">
+                            <p class="sofia-14-600 black-color">Website Username</p>
+                            <a href="https://www.biddabee.com">www.biddlebee.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrapper">
+                    <div class="video-contant">
+                        <div class="video-thumb">
+                            <img src="images/image7.png" alt="Video Thumbnail 7">
+                        </div>
+                        <div class="play-button"></div>
+                        <div class="video">
+                            <video style="visibility: hidden;">
+                                <source src="images/mov_bbb.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="client-profile">
+                            <img class="client-profile-image" src="images/icon7.png" alt="Profile 7">
+                        </div>
+                        <div class="client-name">
+                            <p class="sofia-14-600 black-color">Website Username</p>
+                            <a href="https://www.biddabee.com">www.biddlebee.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrapper">
+                    <div class="video-contant">
+                        <div class="video-thumb">
+                            <img src="images/image8.png" alt="Video Thumbnail 8">
+                        </div>
+                        <div class="play-button"></div>
+                        <div class="video">
+                            <video style="visibility: hidden;">
+                                <source src="images/mov_bbb.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="client-profile">
+                            <img class="client-profile-image" src="images/icon8.png" alt="Profile 8">
+                        </div>
+                        <div class="client-name">
+                            <p class="sofia-14-600 black-color">Website Username</p>
+                            <a href="https://www.biddabee.com">www.biddlebee.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-button">
+                <a href="#" class="primary-button">Start Your Shopify Journey</a>
+            </div>
+        </div>  
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const wrappers = document.querySelectorAll('.video-contant');
+            wrappers.forEach((wrapper, idx) => {
+                const button = wrapper.querySelector('.play-button');
+                const thumb = wrapper.querySelector('.video-thumb');
+                const video = wrapper.querySelector('video');
+                button.addEventListener('click', function (e) {
+                    e.stopPropagation();
+
+                    document.querySelectorAll('.video-contant video').forEach((v, i) => {
+                        if (v !== video) {
+                            v.pause();
+                            v.closest('.video-contant').querySelector('.video-thumb').style.visibility = 'visible';
+                            v.closest('.video-contant').querySelector('.play-button').classList.remove('playing');
+                        }
+                    });
+                    if (video.paused) {
+                        video.style.visibility = 'visible';
+                        video.play();
+                        thumb.style.visibility = 'hidden';
+                        button.classList.add('playing');
+                    } else {
+                        video.pause();
+                        thumb.style.visibility = 'visible';
+                        button.classList.remove('playing');
+                    }
+                });
+                video.addEventListener('ended', function () {
+                    thumb.style.visibility = 'visible';
+                    button.classList.remove('playing');
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            function initializeSlick() {
+                $('.video-section .video-container').slick({
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    dots: false,
+                    infinite: false,
+                });
+            }
+
+            if ($(window).width() <= 767) {
+                initializeSlick();
+            }
+
+            $(window).resize(function() {
+                if ($(window).width() <= 767 && !$('.video-section .video-container').hasClass('slick-initialized')) {
+                    initializeSlick();
+                } else if ($(window).width() > 767 && $('.video-section .video-container').hasClass('slick-initialized')) {
+                    $('.video-section .video-container').slick('unslick');
+                }
+            });
+        });
+    </script>
+    <!-- VIDEO SECTION END -->
+
+    <!-- JOURNEY SECTION START -->
+    <section class="journey-section">
+        <div class="page-width">
+            <div class="journey-content background-color">
+                <div class="left-content">
+                    <h3 class="sofia-20 weight-600 white-color">Discover My Shopify</h3>
+                    <h2 class="sofia-42-700 white-color">Development Journey</h2>
+                    <p class="sofia-20 weight-500">Welcome! I'm Bhavin, a senior Shopify developer with a passion for creating outstanding e-commerce stores. With over 6 years of Shopify development experience, I have successfully collaborated with over 100+ clients, transforming their online presence with tailored solutions.<br><br>
+                        With a rich portfolio of 150+ Shopify projects that demonstrate my expertise in theme customization, design, and development.<br><br>
+                        As an experienced Shopify developer, I pride myself on delivering tailored e-commerce solutions. You can view Bhavin Domadiya's Shopify development portfolio for a detailed look at my projects, showcasing my skills in Shopify optimization and customization.<br><br>
+                        Let’s work together to bring your e-commerce vision to life.</p>
+                    <div class="buttons mobile-buttons">
+                        <a href="#" class="secondary-button">View My Work</a>
+                        <a href="#" class="primary-button">Hire Me</a>
+                    </div>
+                </div>
+                <div class="right-image">
+                    <div class="image desktop">
+                        <img src="images/about 2.png" alt="Bhavin image">
+                    </div>
+                    <div class="image mobile">
+                        <img src="images/Group 1200.png" alt="Bhavin image">
+                    </div>
+                    <div class="buttons desktop-buttons">
+                        <a href="#" class="secondary-button">View My Work</a>
+                        <a href="#" class="primary-button">Hire Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JOURNEY SECTION END -->
+    
+    <!-- REVIEW SECTION START -->
+    <section class="reviwe-section">
+        <div class="page-width">
+            <div class="section-title">
+                <h2 class="sofia-60-700 black-color">What Our Clients Say</h2>
+            </div>
+            <div class="review-list desktop-review">
+                <div class="review-list-item">
+                    <div class="review-info">
+                        <div class="author-info">
+                            <div class="author-icon">
+                                <img src="images/Author.png" alt="Krushna Ghevariya">
+                            </div>
+                            <div class="author-name">
+                                <h3 class="bokara-grey sofia-14-600">Krushna Ghevariya</h3>
+                                <div class="founder">
+                                    <h4 class="bokara-grey">Founder of Sylvi</h4>
+                                    <span><img src="images/verified_icon 1.svg" alt="Verified Icon"> Verified buyer</span>
+                                </div>
+                                <h5>Feb 5, 2025</h5>
+                            </div>
+                        </div>
+                        <div class="google-icon">
+                            <img src="images/Google.svg" alt="Google icon">
+                        </div>
+                    </div>
+                    <img src="images/Star-new.svg" alt="Star icon">
+                    <p class="bokara-grey">"Bhavin transformed our Shopify store and increased conversions by 40%! Highly recommended!"</p>
+                </div>
+                <div class="review-list-item">
+                    <div class="review-info">
+                        <div class="author-info">
+                            <div class="author-icon">
+                                <img src="images/Author.png" alt="Krushna Ghevariya">
+                            </div>
+                            <div class="author-name">
+                                <h3 class="bokara-grey sofia-14-600">Krushna Ghevariya</h3>
+                                <div class="founder">
+                                    <h4 class="bokara-grey">Founder of Sylvi</h4>
+                                    <span><img src="images/verified_icon 1.svg" alt="Verified Icon"> Verified buyer</span>
+                                </div>
+                                <h5>Feb 5, 2025</h5>
+                            </div>
+                        </div>
+                        <div class="google-icon">
+                            <img src="images/Google.svg" alt="Google icon">
+                        </div>
+                    </div>
+                    <img src="images/Star-new.svg" alt="Star icon">
+                    <p class="bokara-grey">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book”</p>
+                </div>
+                <div class="review-list-item">
+                    <div class="review-info">
+                        <div class="author-info">
+                            <div class="author-icon">
+                                <img src="images/Author.png" alt="Krushna Ghevariya">
+                            </div>
+                            <div class="author-name">
+                                <h3 class="bokara-grey sofia-14-600">Krushna Ghevariya</h3>
+                                <div class="founder">
+                                    <h4 class="bokara-grey">Founder of Sylvi</h4>
+                                    <span><img src="images/verified_icon 1.svg" alt="Verified Icon"> Verified buyer</span>
+                                </div>
+                                <h5>Feb 5, 2025</h5>
+                            </div>
+                        </div>
+                        <div class="google-icon">
+                            <img src="images/Google.svg" alt="Google icon">
+                        </div>
+                    </div>
+                    <img src="images/Star-new.svg" alt="Star icon">
+                    <p class="bokara-grey">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.”</p>
+                </div>
+                <div class="review-list-item">
+                    <div class="review-info">
+                        <div class="author-info">
+                            <div class="author-icon">
+                                <img src="images/Author.png" alt="Krushna Ghevariya">
+                            </div>
+                            <div class="author-name">
+                                <h3 class="bokara-grey sofia-14-600">Krushna Ghevariya</h3>
+                                <div class="founder">
+                                    <h4 class="bokara-grey">Founder of Sylvi</h4>
+                                    <span><img src="images/verified_icon 1.svg" alt="Verified Icon"> Verified buyer</span>
+                                </div>
+                                <h5>Feb 5, 2025</h5>
+                            </div>
+                        </div>
+                        <div class="google-icon">
+                            <img src="images/Google.svg" alt="Google icon">
+                        </div>
+                    </div>
+                    <img src="images/Star-new.svg" alt="Star icon">
+                    <p class="bokara-grey">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book”</p>
+                </div>
+                <div class="review-list-item">
+                    <div class="review-info">
+                        <div class="author-info">
+                            <div class="author-icon">
+                                <img src="images/Author.png" alt="Krushna Ghevariya">
+                            </div>
+                            <div class="author-name">
+                                <h3 class="bokara-grey sofia-14-600">Krushna Ghevariya</h3>
+                                <div class="founder">
+                                    <h4 class="bokara-grey">Founder of Sylvi</h4>
+                                    <span><img src="images/verified_icon 1.svg" alt="Verified Icon"> Verified buyer</span>
+                                </div>
+                                <h5>Feb 5, 2025</h5>
+                            </div>
+                        </div>
+                        <div class="google-icon">
+                            <img src="images/Google.svg" alt="Google icon">
+                        </div>
+                    </div>
+                    <img src="images/Star-new.svg" alt="Star icon">
+                    <p class="bokara-grey">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.”</p>
+                </div>
+                <div class="review-list-item">
+                    <div class="review-info">
+                        <div class="author-info">
+                            <div class="author-icon">
+                                <img src="images/Author.png" alt="Krushna Ghevariya">
+                            </div>
+                            <div class="author-name">
+                                <h3 class="bokara-grey sofia-14-600">Krushna Ghevariya</h3>
+                                <div class="founder">
+                                    <h4 class="bokara-grey">Founder of Sylvi</h4>
+                                    <span><img src="images/verified_icon 1.svg" alt="Verified Icon"> Verified buyer</span>
+                                </div>
+                                <h5>Feb 5, 2025</h5>
+                            </div>
+                        </div>
+                        <div class="google-icon">
+                            <img src="images/Google.svg" alt="Google icon">
+                        </div>
+                    </div>
+                    <img src="images/Star-new.svg" alt="Star icon">
+                    <p class="bokara-grey">"Bhavin transformed our Shopify store and increased conversions by 40%! Highly recommended!"</p>
+                </div>
+                <div class="review-list-item">
+                    <div class="review-info">
+                        <div class="author-info">
+                            <div class="author-icon">
+                                <img src="images/Author.png" alt="Krushna Ghevariya">
+                            </div>
+                            <div class="author-name">
+                                <h3 class="bokara-grey sofia-14-600">Krushna Ghevariya</h3>
+                                <div class="founder">
+                                    <h4 class="bokara-grey">Founder of Sylvi</h4>
+                                    <span><img src="images/verified_icon 1.svg" alt="Verified Icon"> Verified buyer</span>
+                                </div>
+                                <h5>Feb 5, 2025</h5>
+                            </div>
+                        </div>
+                        <div class="google-icon">
+                            <img src="images/Google.svg" alt="Google icon">
+                        </div>
+                    </div>
+                    <img src="images/Star-new.svg" alt="Star icon">
+                    <p class="bokara-grey">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.”</p>
+                </div>
+                <div class="review-list-item">
+                    <div class="review-info">
+                        <div class="author-info">
+                            <div class="author-icon">
+                                <img src="images/Author.png" alt="Krushna Ghevariya">
+                            </div>
+                            <div class="author-name">
+                                <h3 class="bokara-grey sofia-14-600">Krushna Ghevariya</h3>
+                                <div class="founder">
+                                    <h4 class="bokara-grey">Founder of Sylvi</h4>
+                                    <span><img src="images/verified_icon 1.svg" alt="Verified Icon"> Verified buyer</span>
+                                </div>
+                                <h5>Feb 5, 2025</h5>
+                            </div>
+                        </div>
+                        <div class="google-icon">
+                            <img src="images/Google.svg" alt="Google icon">
+                        </div>
+                    </div>
+                    <img src="images/Star-new.svg" alt="Star icon">
+                    <p class="bokara-grey">"Bhavin transformed our Shopify store and increased conversions by 40%! Highly recommended!"</p>
+                </div>
+                <div class="review-list-item">
+                    <div class="review-info">
+                        <div class="author-info">
+                            <div class="author-icon">
+                                <img src="images/Author.png" alt="Krushna Ghevariya">
+                            </div>
+                            <div class="author-name">
+                                <h3 class="bokara-grey sofia-14-600">Krushna Ghevariya</h3>
+                                <div class="founder">
+                                    <h4 class="bokara-grey">Founder of Sylvi</h4>
+                                    <span><img src="images/verified_icon 1.svg" alt="Verified Icon"> Verified buyer</span>
+                                </div>
+                                <h5>Feb 5, 2025</h5>
+                            </div>
+                        </div>
+                        <div class="google-icon">
+                            <img src="images/Google.svg" alt="Google icon">
+                        </div>
+                    </div>
+                    <img src="images/Star-new.svg" alt="Star icon">
+                    <p class="bokara-grey">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.”</p>
+                </div>
+            </div>
+            <div class="mobile-review">
+                <img src="images/Group 1166.png" alt="Review Images">
+            </div>
+            <div class="section-button">
+                <a href="#" class="primary-button">View All Reviews</a>
+            </div>
+        </div>
+    </section>
+    <!-- REVIEW SECTION END -->
+
+    <!-- IMAGE WITH TEXT SECTION START -->
+    <section class="image-with-text">
+        <div class="page-width">
+            <div class="section-title">
+                <h2 class="black-color sofia-60-700">See my Work in Action!</h2>
+                <p class="sofia-22-400">Discover how our expertise delivers real results through in-depth case studies showcasing innovation, strategy, and success.</p>
+            </div>
+            <div class="image-tetx right-image">
+                <div class="left-content">
+                    <h3 class="black-color">Custom Feature Enhancements for Sylvi's Shopify Store</h3>
+                    <p class="weight-500 sofia-20"><a href="https://sylvi.in/">Sylvi</a> is a premium watch brand offering a wide range of stylish and high-quality timepieces for both men and women. With a commitment to craftsmanship, innovation, and affordability, Sylvi aims to provide a seamless shopping experience for customers looking for elegant and reliable watches.</p>
+                    <a href="#" class="primary-button">More about this project</a>
+                </div>
+                <div class="right-img">
+                    <div class="image">
+                        <img src="images/Sylvi.png" alt="Sylvi image">
+                    </div>
+                </div>
+            </div>
+            <div class="image-tetx left-image">
+                <div class="left-image">
+                    <img src="images/Device.png" alt="Quirksmith image">
+                </div>
+                <div class="right-content">
+                    <h3 class="black-color">Quirksmith</h3>
+                    <p class="weight-500 sofia-20"><a href="https://quirksmith.com/">Quirksmith</a> is an Indian jewelry brand known for handcrafted, expressive, and bold silver designs. <br><br>We optimized site speed, improved UI/UX, and added custom features like dynamic gift options. Using the Broadcast theme, we enhanced user experience with a personalized gifting flow and smoother performance, boosting engagement and conversions.</p>
+                    <a href="#" class="primary-button">More about this project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- IMAGE WITH TEXT SECTION EMD -->
+
+    <!-- GROW REVENUE SECTION START -->
+    <section class="grow-revenue-section background-color">
+        <div class="bg-image">
+            <div class="page-width">
+                <div class="section-content">
+                    <h2 class="sofia-60-700 white-color">Results that Grow Revenue!</h2>
+                    <h3 class="sofia-32-700">And Design That Converts</h3>
+                    <p class="sofia-20 weight-700">
+                        If you're looking for a Shopify expert who doesn't just make things look good but actually helps you sell more, you're in the right place.</p>
+                    <p class="sofia-20 weight-700">
+                        I've helped brands scale from scratch to thriving Shopify stores with conversion-focused design, optimized flows, and deep eCommerce strategy.</p>
+                    <p class="sofia-20 weight-700">
+                        From speed and SEO to CRO and custom design — I offer end-to-end Shopify solutions that drive real results.</p>
+                    <p class="sofia-20 weight-700">
+                        If you're serious about growing your store, I'd love to work with you.</p>
+                    <div class="shopify-journey">
+                        <h2 class="sofia-42-700 journey-title">If you want to:</h2>
+                        <div class="list-item">
+                            <p class="sofia-20 weight-500 white-color"><span>➤</span> Boost conversions on your product and landing pages</p>
+                            <p class="sofia-20 weight-500 white-color"><span>➤</span> Increase average order value with smart store architecture</p>
+                            <p class="sofia-20 weight-500 white-color"><span>➤</span> Improve retention and user experience in your online store</p>
+                        </div>
+                        <a href="#" class="primary-button">Start Your Shopify Journey</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- GROW REVENUE SECTION END -->
+
+    <!-- FOOTER START -->
+    <footer class="footer background-color">
+        <div class="page-width">
+            <p>Copyright © 2018—2025 Bhavin Domadiya. <br>All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+</body>
+</html>
